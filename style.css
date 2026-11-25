@@ -23,3 +23,10 @@
   .topbar nav { flex-wrap: wrap; justify-content: flex-end; gap: 2px clamp(6px,1.2vw,14px); }
   .topbar nav a { white-space: nowrap; }
 }
+
+/* HOW I WORK: numbered headings with their supporting paragraphs. */
+.approach-list li { grid-template-columns: 2.75ch minmax(0,1fr); gap: .58rem .65rem; align-content: start; padding-block: 1.25rem 1.7rem; }
+.approach-list .work-heading { grid-column: 1 / -1; display: grid; grid-template-columns: 2.75ch minmax(0,1fr); align-items: baseline; gap: .65rem; font-size: 1rem; line-height: 1.55; margin: 0; word-break: keep-all; overflow-wrap: anywhere; }
+.approach-list .work-heading .work-number { font-size: 1em; font-weight: 750; font-variant-numeric: tabular-nums; color: #c6e2d0; }
+.approach-list .work-title { font-weight: 750; }
+.approach-list .work-body { grid-column: 2; margin: 0; line-height: 1.8; font-size: .96rem; color: #e2ece6; word-break: keep-all; overflow-wrap: anywhere; }
