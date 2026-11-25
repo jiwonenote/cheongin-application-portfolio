@@ -13,3 +13,13 @@
 .hero-person{margin:0;justify-self:center;display:grid;justify-items:center;gap:15px}.hero-person figcaption{width:100%}#profile-traits{list-style:none;margin:0;padding:0;display:grid;gap:5px;color:#f0f5ec;font-size:15px;font-weight:600;line-height:1.55;word-break:keep-all}#profile-traits li::before{content:"·";color:#a4c8ad;margin-right:.55em}@media(max-width:850px){.hero-person{grid-row:1;justify-self:start;justify-items:start}}
 
 .hero h1{white-space:pre-line}.essay-intro{max-width:860px;color:var(--muted);font-size:1rem;line-height:1.8;margin:0 0 2rem}
+
+/* Preserve the line breaks in the portfolio content. */
+#intro, #about-paragraphs p { white-space: pre-line; }
+.topbar .wordmark { white-space: nowrap; }
+@media (min-width:641px) and (max-width:1050px) {
+  .topbar { gap: 10px; }
+  .topbar .wordmark { font-size: clamp(18px,2.3vw,25px); }
+  .topbar nav { flex-wrap: wrap; justify-content: flex-end; gap: 2px clamp(6px,1.2vw,14px); }
+  .topbar nav a { white-space: nowrap; }
+}
