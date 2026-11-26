@@ -30,3 +30,14 @@
 .approach-list .work-heading .work-number { font-size: 1em; font-weight: 750; font-variant-numeric: tabular-nums; color: #c6e2d0; }
 .approach-list .work-title { font-weight: 750; }
 .approach-list .work-body { grid-column: 2; margin: 0; line-height: 1.8; font-size: .96rem; color: #e2ece6; word-break: keep-all; overflow-wrap: anywhere; }
+
+/* 취미와 일상: 번호가 보이는 펼침형 카드 */
+.detail-group-hobbies{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
+.detail-group-hobbies>h3{grid-column:1/-1;margin-bottom:2px}
+.detail-group-hobbies .detail-record{margin:0;border-color:#d8e4da;border-radius:10px;background:linear-gradient(135deg,#fff 0%,#f7fbf7 100%);box-shadow:0 3px 12px rgba(35,76,55,.04)}
+.detail-group-hobbies .detail-record[open]{border-color:#91b49a;box-shadow:0 7px 18px rgba(23,67,49,.08)}
+.detail-group-hobbies .detail-record summary{padding:15px 42px 15px 17px;min-height:52px;justify-content:center}
+.detail-group-hobbies .detail-record summary:after{right:16px;top:13px;font-size:19px}
+.detail-group-hobbies .record-title{font-size:15px;letter-spacing:-.02em;color:#294c3c}
+.detail-group-hobbies .record-body{padding:13px 17px 16px;font-size:13px;line-height:1.7;background:rgba(255,255,255,.7)}
+@media(max-width:700px){.detail-group-hobbies{grid-template-columns:1fr}.detail-group-hobbies>h3{grid-column:auto}}
