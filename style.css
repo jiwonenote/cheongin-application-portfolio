@@ -73,3 +73,7 @@ body{background:var(--paper);color:var(--ink)}
 #profile-traits li:hover{background:rgba(230,235,243,.19);border-color:rgba(214,222,235,.7);transform:translateY(-1px)}
 #profile-traits li::before{content:counter(trait,decimal-leading-zero);display:grid;place-items:center;width:28px;height:23px;border-radius:999px;background:#d6deeb;color:#222b3e;font-size:10px;font-weight:900;letter-spacing:.04em}
 @media(max-width:850px){#profile-traits{width:min(100%,390px)}#profile-traits li{font-size:13px;padding:11px 13px}}
+
+/* Add breathing room below the hero exam result line. */
+.hero-foot{padding-bottom:24px}
+@media(max-width:640px){.hero-foot{padding-bottom:20px}}
