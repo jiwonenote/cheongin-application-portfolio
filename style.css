@@ -77,3 +77,7 @@ body{background:var(--paper);color:var(--ink)}
 /* Add breathing room below the hero exam result line. */
 .hero-foot{padding-bottom:24px}
 @media(max-width:640px){.hero-foot{padding-bottom:20px}}
+
+/* Hide removed eyebrow text and keep the standalone activities section clean. */
+.eyebrow:empty{display:none}
+.standalone-activity{margin-top:0;padding-top:0;border-top:0}
