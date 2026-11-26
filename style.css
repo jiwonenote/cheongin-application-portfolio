@@ -81,3 +81,13 @@ body{background:var(--paper);color:var(--ink)}
 /* Hide removed eyebrow text and keep the standalone activities section clean. */
 .eyebrow:empty{display:none}
 .standalone-activity{margin-top:0;padding-top:0;border-top:0}
+
+/* 조사·분석 및 문서 작성: 번호형 역량 카드 */
+.detail-group-analysis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.detail-group-analysis>h3{grid-column:1/-1;margin-bottom:2px}
+.detail-group-analysis .detail-record{margin:0;border-color:#d6dce7;border-radius:10px;background:#fff;box-shadow:0 3px 12px rgba(34,43,62,.04)}
+.detail-group-analysis .detail-record[open]{border-color:#aab6c9;box-shadow:0 8px 20px rgba(34,43,62,.08)}
+.detail-group-analysis .detail-record summary{padding:16px 42px 16px 18px;background:linear-gradient(135deg,#fff 0%,#f5f7fb 100%)}
+.detail-group-analysis .record-title{font-size:16px;color:#2d3a52;letter-spacing:-.02em}
+.detail-group-analysis .record-body{padding:15px 18px 17px;font-size:13px;line-height:1.75;background:#f9fafc}
+@media(max-width:700px){.detail-group-analysis{grid-template-columns:1fr}.detail-group-analysis>h3{grid-column:auto}}
