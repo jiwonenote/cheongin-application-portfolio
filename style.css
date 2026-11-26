@@ -54,3 +54,15 @@ body{background:var(--paper);color:var(--ink)}
 .local-activity{border-color:#c3cedd;border-left-color:#667896;background:#f7f9fc}.local-activity-meta,.local-activity-label{color:#5d6f8d}.local-activity p{color:#566276}
 .detail-group-hobbies .detail-record{border-color:#d6dce7;background:linear-gradient(135deg,#fff 0%,#f5f7fb 100%)}.detail-group-hobbies .detail-record[open]{border-color:#aab6c9}.detail-group-hobbies .record-title{color:#33425d}.detail-group-hobbies .record-body{background:rgba(255,255,255,.78)}
 .approach-list .work-number{color:#d3dce9}.approach-list .work-body{color:#e2e7ef}
+
+/* 교육·수상: 핵심 정보가 한눈에 보이는 카드 */
+.detail-group-education .detail-record{border-color:#d6dce7;background:#fff}
+.detail-group-education .detail-record[open]{border-color:#aab6c9;box-shadow:0 8px 20px rgba(34,43,62,.08)}
+.detail-group-education .detail-record summary{padding:17px 42px 17px 19px}
+.detail-group-education .record-title{font-size:18px;color:#2d3a52}
+.detail-group-education .record-body{padding:14px;background:#f7f9fc}
+.study-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.study-card{position:relative;min-width:0;padding:19px 19px 18px;border:1px solid #d8dee9;border-radius:10px;background:#fff;box-shadow:0 3px 12px rgba(34,43,62,.04)}
+.study-number{display:inline-flex;align-items:center;justify-content:center;width:30px;height:24px;margin-bottom:12px;border-radius:999px;background:#e6ebf3;color:#596a85;font-size:11px;font-weight:800;letter-spacing:.04em}
+.study-head{margin-bottom:9px}.study-provider{display:block;color:#66758d;font-size:12px;font-weight:750;letter-spacing:.01em}.study-title{margin:2px 0 0;color:#29364d;font-size:17px;line-height:1.45;letter-spacing:-.025em}.study-meta{margin:0 0 12px;color:#60708a;font-size:12px;font-weight:700;line-height:1.5}.study-copy{margin:6px 0 0;color:#566276;font-size:13px;line-height:1.65}.study-subhead{margin:14px 0 5px;color:#465975;font-size:12px}.study-list{margin:7px 0 0;padding-left:18px;color:#566276;font-size:13px;line-height:1.7}.study-list li{margin:2px 0}
+@media(max-width:700px){.study-cards{grid-template-columns:1fr}.study-card{padding:17px 16px}.study-title{font-size:16px}}
