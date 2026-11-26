@@ -66,3 +66,10 @@ body{background:var(--paper);color:var(--ink)}
 .study-number{display:inline-flex;align-items:center;justify-content:center;width:30px;height:24px;margin-bottom:12px;border-radius:999px;background:#e6ebf3;color:#596a85;font-size:11px;font-weight:800;letter-spacing:.04em}
 .study-head{margin-bottom:9px}.study-provider{display:block;color:#66758d;font-size:12px;font-weight:750;letter-spacing:.01em}.study-title{margin:2px 0 0;color:#29364d;font-size:17px;line-height:1.45;letter-spacing:-.025em}.study-meta{margin:0 0 12px;color:#60708a;font-size:12px;font-weight:700;line-height:1.5}.study-copy{margin:6px 0 0;color:#566276;font-size:13px;line-height:1.65}.study-subhead{margin:14px 0 5px;color:#465975;font-size:12px}.study-list{margin:7px 0 0;padding-left:18px;color:#566276;font-size:13px;line-height:1.7}.study-list li{margin:2px 0}
 @media(max-width:700px){.study-cards{grid-template-columns:1fr}.study-card{padding:17px 16px}.study-title{font-size:16px}}
+
+/* Hero traits: visible banner cards */
+#profile-traits{counter-reset:trait;display:grid;gap:9px;width:min(100%,390px);margin:0;padding:0;list-style:none}
+#profile-traits li{counter-increment:trait;display:grid;grid-template-columns:32px minmax(0,1fr);align-items:center;gap:10px;padding:12px 15px;border:1px solid rgba(214,222,235,.42);border-radius:9px;background:rgba(230,235,243,.12);box-shadow:0 5px 15px rgba(10,16,29,.16);color:#f8fafc;font-size:14px;font-weight:750;line-height:1.45;letter-spacing:-.015em;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+#profile-traits li:hover{background:rgba(230,235,243,.19);border-color:rgba(214,222,235,.7);transform:translateY(-1px)}
+#profile-traits li::before{content:counter(trait,decimal-leading-zero);display:grid;place-items:center;width:28px;height:23px;border-radius:999px;background:#d6deeb;color:#222b3e;font-size:10px;font-weight:900;letter-spacing:.04em}
+@media(max-width:850px){#profile-traits{width:min(100%,390px)}#profile-traits li{font-size:13px;padding:11px 13px}}
