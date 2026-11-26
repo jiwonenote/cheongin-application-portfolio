@@ -91,3 +91,13 @@ body{background:var(--paper);color:var(--ink)}
 .detail-group-analysis .record-title{font-size:16px;color:#2d3a52;letter-spacing:-.02em}
 .detail-group-analysis .record-body{padding:15px 18px 17px;font-size:13px;line-height:1.75;background:#f9fafc}
 @media(max-width:700px){.detail-group-analysis{grid-template-columns:1fr}.detail-group-analysis>h3{grid-column:auto}}
+
+/* Career detail: split numbered work areas into readable cards. */
+.career-overview{display:grid;gap:4px;margin-bottom:13px;padding:14px 16px;border:1px solid #d8dee9;border-radius:9px;background:#fff}
+.career-meta{margin:0;color:#566276;font-size:13px;line-height:1.7}
+.career-task-cards{display:grid;gap:12px}
+.career-task-card{padding:17px 18px;border:1px solid #d6dce7;border-radius:10px;background:#fff;box-shadow:0 3px 12px rgba(34,43,62,.04)}
+.career-task-title{margin:0 0 10px;padding-bottom:9px;border-bottom:1px solid #e1e5ed;color:#33425d;font-size:15px;line-height:1.5;letter-spacing:-.015em}
+.career-task-copy{margin:0 0 6px;color:#566276;font-size:13px;line-height:1.72}
+.career-task-list{margin:0;padding-left:19px;color:#566276;font-size:13px;line-height:1.72}
+.career-task-list li{margin:3px 0;padding-left:2px}.career-task-list li::marker{color:#687791}
